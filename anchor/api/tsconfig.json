@@ -1,0 +1,10 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "types": ["node", "express", "mongoose"],
+    "typeRoots": ["./src/types", "./node_modules/@types"]
+  },
+  "exclude": ["./dist"]
+}

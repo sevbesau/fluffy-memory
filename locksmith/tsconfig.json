@@ -1,0 +1,14 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "node",
+      "express",
+      "mongoose"
+    ],
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ]
+  },
+}

@@ -1,0 +1,10 @@
+GET http://localhost:8080/
+
+GET http://localhost:8080/ping
+
+GET http://localhost:8080/cast?authorization=secret&project=botanical-paranoia&service=api
+GET http://localhost:8080/cast?authorization=secret&project=botanical-paranoia&service=app
+
+GET http://localhost:8080/cast?authorization=secret&project=traktor&service=app
+
+

@@ -1,0 +1,33 @@
+{
+  "name": "anchor-api",
+  "version": "1.0.0",
+  "description": "Siliconminds monorepo anchor",
+  "main": "dist/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "NODE_ENV=development nodemon dist/index.js",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@siliconminds/db": "^1.0.1",
+    "@siliconminds/envalidate": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.2.5",
+    "morgan": "^1.10.0",
+    "portfinder": "^1.0.28"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.23",
+    "nodemon": "^2.0.13"
+  }
+}

@@ -1,0 +1,22 @@
+GET http://localhost:5001/
+
+###
+GET http://localhost:5001/me
+
+### 
+POST http://localhost:5001/register
+content-type: application/json
+
+{
+  "email": "seppe@siliconminds.be",
+  "password": "1234"
+}
+
+### 
+POST http://localhost:5001/login
+content-type: application/json
+
+{
+  "email": "seppe@siliconminds.be",
+  "password": "1234"
+}

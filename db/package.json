@@ -1,0 +1,24 @@
+{
+  "name": "@siliconminds/db",
+  "version": "1.0.4",
+  "description": "database helper",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "test": "jest --watch --testTimeout=10000 --detectOpenHandles --coverage",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "seppe van besauw",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sevbesau/packages.git",
+    "directory": "packages/db"
+  },
+  "dependencies": {
+    "mongoose": "^6.2.9"
+  }
+}
